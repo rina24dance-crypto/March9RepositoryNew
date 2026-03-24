@@ -24,36 +24,80 @@
 
    </ol>
 
-   <table border="1">    <!--Создаю таблицу(основной контейнер для таблицы) организованную в строки и столбцы-->  
- 
-       <tr>                <!--Строка таблицы-->
-          <th>Имя</th>
-          <th>Возраст</th>  <!--Заголовочная ячейка таблицы-->
-          <th>Город</th>  
-       </tr>
 
-       <tr>
+   <h1>Person table</h1>
+
+
+
+   <table border="1">    <!--Создаю таблицу(основной контейнер для таблицы) организованную в строки и столбцы-->  
+        
+    <colgroup>
+         <col style="background-color: orange" span="1"/>   <!--задаю цвет фона в столбик-->
+    </colgroup>
+
+
+    <colgroup>
+            <col style="background-color: red" span="1" />
+     </colgroup>
+
+
+    <colgroup>
+            <col style="background-color: yellow" span="1" />
+    </colgroup>
+
+
+    <colgroup>
+            <col style="background-color: gold" span="1"/>
+     </colgroup>
+
+
+
+
+
+       <tr style="background-color: orange">  <!--задаю цвет фона в строчку-->  <!--tr это строка таблицы-->
+         <th colspan="1">Страна</th>     <!--colspan может растягивать ячейку на несколько столбцов в сторону-->          
+         <th>Имя</th>
+         <th>Возраст</th>  <!--Заголовочная ячейка таблицы-->
+         <th>Город</th>
+         <th>Увлечение</th>
+         <th>Работа</th>
+       </tr>
+       
+
+        <tr style="background-color: red">
+       
+          <th rowspan="1">Казахстан</th>    <!--rawspan может растягивать ячейку вниз-->
           <td>Рина</td>     <!--Ячейка таблицы-->
           <td>26</td>
           <td>Алматы</td>
-       </tr>
+          <td>баскетбол</td>
+          <td>веб-разработка</td>
 
-       <tr>
+        </tr>
+
+         
+       <tr style="background-color: yellow">
+       
+           <th rowspan="1">Америка</th>
            <td>John</td>
            <td>28</td>
            <td>New York</td>
+           <td>gym</td>
+           <td>stockbroker</td>
        </tr>
 
-       <tr>
+
+       <tr style="background-color: gold">
+          <th rowspan="1">Англия</th>
           <td>Paris</td>
           <td>36</td>
           <td>London</td>
+          <td>shopping</td>
+          <td>modeling</td>
        </tr>
 
 
 
-   </table>
-
-
-</body>
-</html>
+       
+        
+      
