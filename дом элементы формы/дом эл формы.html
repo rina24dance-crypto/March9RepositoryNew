@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="submit" method="post"> <!--Почему нету ошибки когда я убираю action="submit" method="post"-->
+        <!--Потому-что у меня нет java script-->
+        <!--Когда грузит сайт ошибка потому-что я здесь указал submit но у меня нет верной программы как его подключать-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <p></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- <input> используется для ввода данных пользователем -->
+        <p></p>
+
+        <label for="password">Password:</label>
+        <input type="Password" id="Password" name="Password" required>
+        <p></p>
+
+
+
+
+
+        <label for="message">Message:</label>
+        <!--элемент <label> связывает текстовую метку с элементом формы улучшая доступность-->
+        <textarea id="message" name="message" name="message" rows="10" cols="50"></textarea><br><br>
+        <!--textarea вводится для многострочного ввода текста-->
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required> <!--select используется для создания выпадающего списка-->
+
+
+            <option value="">Select your country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="kz">Kazakhstan</option>
+            <option value="rus">Russia</option>
+            <option value="br">Brazil</option>
+
+
+        </select>
+        <p></p>
+
+        <button type="submit">Submit</button> <!--создаю кнопку <button>-->
+        <button type="reset">Reset</button> <br><br><br><br><br><br><br><br><br><br>
+
+
+    </form>
+
+    <!---->
+
+
+
+    <form> <!--является контейнером для всех элементов формы-->
+        <fieldset>
+            <!--HTML-тег или прямоугольник, используемый для логической группировки связанных элементов управления (полей ввода, кнопок, списков) внутри веб-формы.-->
+            <legend>Личная информация</legend>
+            <!-- в HTML используется для создания заголовка или подписи для группы элементов формы, заключенных внутри элемента fieldset. Обязательно размещается внутри контейнера <fieldset>-->
+
+            <label>
+                Имя:
+                <input type="text" id="Name" name="Name" required>
+            </label>
+
+            <br><br>
+
+            <label>
+                Email:
+                <input type="email" name="email" name="email">
+            </label>
+
+            <br><br>
+
+            <label>
+                Пароль:
+                <input type="password" name="password" name="password" required>
+            </label>
+        </fieldset>
+
+
+        <p></p>
+
+
+        <!---->
+
+
+        <fieldset>
+
+            <legend>Большой текст</legend>
+
+
+            <label for="message">Message:</label>
+
+            <textarea id="message" name="message" name="message" rows="15" cols="50"></textarea><br><br>
+
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+
+
+                <option value="">Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="kz">Kazakhstan</option>
+                <option value="rus">Russia</option>
+                <option value="br">Brazil</option>
+
+
+            </select> <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
