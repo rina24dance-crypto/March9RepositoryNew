@@ -1,0 +1,29 @@
+p {
+    color:blueviolet;
+
+}
+
+p { 
+    color:blue;   /* все что в тэге <p> вывелось синим потому-что css смотрит только на нижний последний тэг p*/
+
+}
+
+.highlight {
+    
+    font-weight: 100;
+}
+
+.highlight {
+
+    font-weight: bolder;  /* вывелось жирным потому-что css смотрит на нижний higlight */ 
+}
+
+#header {
+
+    color:red;     /* все равно вывелось красным хоть и нижний highlight2 тоже относится к <h1> потому-что header в приоритете*/
+}
+
+#highlight2 {
+    color:green;     /* не вывелось зеленым хоть и прописано ниже потому-что css смотрит больше на header */
+
+}
