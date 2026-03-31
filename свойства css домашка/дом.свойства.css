@@ -1,0 +1,40 @@
+h1 {
+    color:red;        /* color это цвет текста */
+    text-align: center; /* text-align это место расположения текста */
+
+}
+
+.highlight {            /* highlight это просто слово(значение класса), могут быть любые буквы */
+    font-size: 24px;     /* font size это размер шрифта */
+    color:orange;    /* color это цвет текста */
+    font-weight: bolder; /* font-weight это жирность текста */
+}
+
+.container {        /* селектор */
+    background-color: red;  /* свойство и цвет контейнера */
+    width: 100px;    /* ширина рамки */
+    height: 100px;   /* высота рамки */
+    background-image: url("NearTheRiver.jpg");    /* поменял с красного цвета на картинку потому-что картинку вставил ниже*/
+
+}
+    
+div {
+   padding: 12px;   /* внутренний отступ(работает внутри какой-то рамки) */
+   margin: 20px;    /* внешний отступ(во все стороны) */
+   border: 5px solid black; /* задает стиль, ширину и цвет границы элемента( основные рамки бывают dotted, double, dashed и solid ) */
+   width: 200px;   /* ширина рамки */ 
+   height: 100px;  /* высота рамки */
+   font-size: 80px;  /* размер шрифта */
+   overflow: hidden;  /* управляет тем, что происходит с содержимым, если оно выходит за границы блока (есть visible, hidden, scroll и auto) */
+
+}
+
+
+.втораяТаблица {
+
+    border2: 7px dotted white;
+    width: 150px;
+    height: 75px;
+    
+
+}
