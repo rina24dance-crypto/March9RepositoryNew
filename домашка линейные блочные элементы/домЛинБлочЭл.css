@@ -1,0 +1,125 @@
+
+.span {
+    background-color: bisque;   /* строчный span */
+    
+}
+
+
+.span2 {
+    background-color: darkgreen;  /* строчный span измененный на блочный */
+    display: block;
+}
+
+
+.label {
+    background-color: burlywood;   /* Строчный label */
+
+}
+
+
+.label2 {
+    display: block;              /* Строчный label измененный на блочный */
+    background-color: coral;
+}
+
+
+.firstContainer {
+    background-color: brown;  /* цвет распростроняется только на строку потому-что я закрыл div на строке в html */
+    display: block;   
+    padding: 10px; 
+    margin: 5px;
+    margin-top: 20px;
+    
+
+}
+
+.container2 {        /* div по умолчанию блочный элемент поэтому желтый идет на фотки*/       
+    background-color: yellow;
+    
+    
+    
+    
+}
+
+.firstBlock {
+    background-color: blue;   /* блочный heading */
+}
+
+.secondBlock {
+    background-color: black;   /* сделал из блочного heading строчный */
+    color: white;
+    padding: 5px;
+    display: inline;
+
+}
+
+.thirdBlock {          /* сделал из блочного heading строчный */
+    display: inline;
+    background-color:blueviolet;
+    padding: 5px;
+    margin: 10px;
+    font-size: 32px;
+}
+
+
+.p1 {
+    background-color: aqua;   /* блочный "p" */
+
+}
+
+
+.p2 {
+    background-color: green;  /* сделал из блочного "p" строчный */
+    display: inline;
+    padding: 3px;
+    margin-right: 10px;      /* на линейные элементы не работает margin здесь */
+    
+    
+}
+
+
+.p3 {
+    background-color: rgb(160, 124, 95);  /* сделал из блочного "p" строчный */
+    display: inline;
+    padding: 5px;
+    
+    
+}
+
+
+
+
+.p4 {
+    margin: 20px;
+    background-color: rgb(255, 196, 234);
+    padding: 10px;
+    display: block;
+    
+    
+}
+
+
+img {
+    display: block;
+    padding: 10px;
+}
+
+
+a {
+    display: block;
+    padding: 10px;
+}
+
+
+h2 {
+    display: block;
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 10px;
+}
