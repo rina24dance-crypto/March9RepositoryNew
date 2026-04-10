@@ -1,0 +1,113 @@
+
+/* Task 1 */
+
+
+.button:hover {
+    background-color: bisque;
+    color: blue;
+    font-weight: bold;
+
+}
+
+.input:focus {
+    border-color: rgb(30, 0, 255);
+    border-width: 5px;
+
+}
+
+
+/* Task 2 */
+
+
+.list_item:first-child {
+    font-weight: 900;
+    background-color: red;
+    display: inline;
+
+}
+
+.list_item:last-child {
+    color: rgb(68, 207, 25);
+    background-color: aqua;
+    font-weight: bold;
+    display: inline;
+}
+
+
+/* Task 3 */
+
+
+a:focus {
+
+    background-color: lawngreen;
+    color: blueviolet;
+}
+
+.Rina:focus {
+    border-color: black;
+    border-width: 3px;
+
+}
+
+.gym:active {
+    background-color: red;
+    display: inline;
+}
+
+p:hover {
+    background-color: green;
+}
+
+
+.list_item:nth-child(odd) {
+    background-color: blueviolet;
+}
+
+
+.next-item:nth-child(odd) {
+    background-color: aqua;
+    
+}
+
+.next-item:nth-child(2) {
+    background-color: darkgreen;
+    display: inline;
+}
+
+
+
+/* Task 4 */
+
+
+.new:hover {
+    background-color: beige;
+    display: inline;
+
+}
+
+p:hover {
+    background-color: chocolate;
+    display: block;
+}
+
+
+.input2:focus {
+    border-color:darkmagenta;
+    border-width: 10px;
+}
+
+
+.button2:focus {
+    border-radius: 2px;
+    background-color: cornsilk;
+    color:aqua;
+    font-weight: bold;
+    display:inline
+}
+
+
+
+.input3:active {
+    background-color: brown;
+    border-width: 5px;
+}
