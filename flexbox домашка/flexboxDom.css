@@ -1,0 +1,320 @@
+.block {             /* justify-content и align-items нету в блочных элементах, есть только в flex */
+    display:block;
+    height:50px;
+    width: 50px;
+    background-color: blue;
+
+}
+
+
+.inline {
+    display:inline;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+
+.flex {
+    display: flex;      /* Почему тут работает одинаково как и с display block? */   
+    justify-content: center;   /* Оно не работает одинаково; С помощью flex я меняю местоположение текста внутри ячейки; */
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    background-color:chartreuse;
+    font-weight: bolder;
+    color: red;
+}
+
+.container {
+    display: flex;       /* Почему пропадает синий фон если я меняю на display:inline? */   /* Потому-что цвет я применяю на контейнер, а inline это линия */
+   /* flex-wrap: wrap;  */
+   /* flex-direction: row; */     /* идет как маленькие колонки если я применяю column */
+    flex-flow: row wrap;  /* Зачем нужен flex flow? Это комбинация flex-wrap и flex-direction */
+    height: 500px;
+    align-content: center;  
+    color: blue;
+    background-color: blueviolet;
+    border: 5px solid wheat;
+    justify-content: center;
+    align-items: flex-end;       /* Как здесь включить align-items? */   /* Он работает когда выключаешь align-content */
+   
+}
+
+
+.item {
+    flex: 0 0 30%;
+    margin: 10px;      
+    padding: 20px;
+    border: 1px solid black;
+    background-color:bisque;
+    font-weight: bolder;
+    text-align: center;
+   /* align-items: flex-end; */     /* В дочерний класс нельзя вставлять align-items, также align-content, justify-content, flex-wrap, flex-direction и flex-flow;  */
+}
+
+
+
+.secondContainer {
+    display: flex;
+    height: 300px;
+    background-color: aqua;
+    flex-flow: row wrap;
+    border: 5px solid black;
+    color: darkblue;
+    justify-content: center;
+    align-content: space-around;
+}
+
+
+
+.item2 {
+    flex: 0 1 150%;          /* Почему здесь не работает flex-shrink? ( второй ноль )  */    /* Он работает когда текст или ячейки выходят за рамки таблицы(0 0 150%) */
+    border: 5px solid black;
+    background-color: bisque;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+  /*  flex-basis: 2000px;   */
+  /*  flex-grow: 1;   */
+  /*  flex-shrink: 1; */      /* тут не работает flex-shrink */    /* Он работает когда текст или ячейки выходят за рамки таблицы(0 0 150%) */
+    
+     
+}
+
+
+.item3 {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 10px solid white;
+    background-color: beige;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+
+.item4 {
+    flex: 1 0 20%;
+    border: 5px solid whitesmoke;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: chartreuse;
+    font-size: larger;
+    font-family: Verdana;
+}
+
+
+
+.thirdContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    width: 2000px;
+    background-color: chocolate;
+    border: 5px solid wheat;
+
+
+}
+
+
+.item5 {
+    border: 5px solid white;
+    margin: 5px; 
+    padding: 20px;
+    background-color: coral;
+    font-weight: bold ;
+    flex: 0 0 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: aquamarine
+    ;
+    
+
+}
+
+
+.item6 {
+    border: 5px solid white;
+    margin: 7px; 
+    padding: 20px;
+    background-color: coral;
+    font-weight: bold ;
+    flex: 1 0 0%;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: aqua;
+}
+
+
+.item7 {
+    border: 5px solid white;
+    margin: 7px; 
+    padding: 20px;
+    background-color: coral;
+    font-weight: bold ;
+    flex-basis: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: khaki;
+}
+
+
+
+.fourthContainer {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: darksalmon;
+    justify-content: space-evenly;
+    align-content: center;
+    border: 5px solid black;
+    
+}
+
+.item8 {
+    border: 5px solid whitesmoke;
+    margin: 15px;
+    padding: 18px;
+    font-weight: bold;
+    color: blue;
+    font-size:large;
+    background-color: white;
+   
+}
+
+
+.item9 {
+    border: 5px solid whitesmoke;
+    margin: 15px;
+    padding: 18px;
+    font-weight: bold;
+    color: blue;
+    font-size:large;
+   background-color: white;
+}
+
+
+.item10 {
+    border: 5px solid whitesmoke;
+    margin: 15px;
+    padding: 18px;
+    font-weight: bold;
+    color: blue;
+    font-size:large;
+    background-color: white;
+}
+
+
+
+.fifthContainer {
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px ridge grey;
+    align-items: center;
+
+}
+
+
+.card1 {
+    height: 85px;
+    width: 50px;
+    background-color: red;
+    margin: 15px;
+    
+}
+
+
+.card2 {
+    height: 85px;
+    width: 50px;
+    background-color: yellow;
+    margin: 15px
+}
+
+
+.card3 {
+    height: 85px;
+    width: 60px;
+    flex: 1 0 35%;
+    background-color: green;
+    margin: 15px;
+    
+
+ }
+
+
+
+
+ .card4 {
+    height: 85px;
+    width: 85px;
+    background-color: pink;
+    margin: 15px;
+    
+}
+
+
+.card5 {
+    height: 85px;
+    width: 60px;
+    background-color: orange;
+    margin: 15px;
+    flex: 0 0 35%;
+}
+
+
+.card6 {
+    height: 85px;
+    width: 50px;
+    background-color: blueviolet;
+    margin: 15px
+
+ }
+
+
+
+
+ .card7 {
+    height: 85px;
+    width: 50px;
+    background-color: lightcoral;
+    margin: 15px;
+    
+}
+
+
+.card8 {
+    height: 85px;
+    width: 50px;
+    background-color: darkred;
+    margin: 15px
+}
+
+
+.card9 {
+    height: 85px;
+    width: 60px;
+    background-color: lightskyblue;
+    margin: 15px;
+    flex: 0 0 35%;
+
+ }
