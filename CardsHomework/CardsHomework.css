@@ -1,0 +1,297 @@
+ /* Card 1 */
+
+
+ .card1 {
+     display: flex;
+     align-items: center;
+     background-color: #000000;
+     width: 1300px;
+     height: 490px;
+     border-radius: 32px;
+     margin-top: 20px;
+     padding: 40px 40px;
+
+ }
+
+
+ /* .card-block */
+ /* Не нужен потому-что в html я уж создал class="card-block" */
+ /* display: block; */
+
+
+ .card-block {
+
+     /* border: 1px solid wheat; */
+     height: 465px;
+     width: 778px;
+     margin-left: 53px;
+
+ }
+
+
+
+
+ .word {
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     /* padding: 7px 0px 0px 0px; */
+     background-color: #191919;
+     width: 73px;
+     height: 27px;
+     border-radius: 6px;
+     margin-bottom: 48px;
+     padding-left: 35px;
+
+ }
+
+
+ .episode3 {
+     color: #118DA8;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     margin-bottom: 18px;
+
+ }
+
+
+ .title {
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 64px;
+     line-height: 70.4px;
+     margin-bottom: 28px;
+
+ }
+
+
+ .description {
+     color: #FFFFFFB2;
+     font-weight: 400;
+     font-size: 22px;
+     line-height: 33px;
+     margin-bottom: 18px;
+     /* padding-right: 1px; */
+
+ }
+
+
+ .button {
+     width: 208px;
+     height: 51px;
+     background-color: #118DA8;
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     border-radius: 6px;
+     border: none;
+
+ }
+
+
+
+ /* Card 2 */
+
+
+ .flex {
+     display: flex;
+ }
+
+
+
+ .card2 {
+     /* display: block; */
+     background-color: #E1EDE6;
+     width: fit-content;
+     margin-top: 100px;
+     padding: 20px 20px 30px 20px;
+     margin-bottom: 15px;
+     margin-left: 50px;
+ }
+
+
+ .name {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 100%;
+     color: #86928B;
+     margin-top: 15px;
+     margin-bottom: 10px;
+ }
+
+
+ .title2 {
+     color: #2C2D35;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 100%;
+     margin-bottom: 10px;
+ }
+
+
+ .materials {
+     color: #2C2D35;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 100%;
+     margin-bottom: 30px;
+
+ }
+
+
+ .price {
+     color: #598D66;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 100%;
+     margin-bottom: 10px;
+
+ }
+
+
+ .btn2 {
+     padding: 14.5px 81.5px 14.5px 81.5px;
+     color: #598D66;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 100%;
+     background-color: #E1EDE6;
+     border: 1px solid #598D66;
+     cursor: pointer;
+
+ }
+
+
+ /* Card 3 */
+
+ .card3 {
+     background-color: whitesmoke;
+     /* width: fit-content; */
+     /* Не нужен здесь потомучто со второй карточки по четвертую идет /*display: flex  */
+     margin-top: 65px;
+     margin-left: 150px;
+
+ }
+
+
+ .title3 {
+     color: #2E363E;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 143%;
+     margin-top: 50px;
+     margin-bottom: 12px;
+     font-family: sans-serif;
+
+ }
+
+
+ .description2 {
+     color: #2E363E;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 150%;
+     margin-bottom: 24px;
+
+ }
+
+
+ .price2 {
+     color: #434B53;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 150%;
+     margin-bottom: 14px;
+
+ }
+
+
+ .btn3 {
+     background-color: #FED84C;
+     padding: 20px 40px 20px 40px;
+     width: 163px;
+     height: 68px;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 152%;
+     border: none;
+     border-radius: 8px;
+     color: #2E363E;
+     margin-bottom: 50px;
+
+
+ }
+
+
+ .padding {
+     margin-left: 44px;
+ }
+
+
+
+ /* Card 4 */
+
+
+ .card4 {
+     /* display: flex; */
+     /* width: fit-content; */
+     background-color: #0C0B15;
+     margin-top: 245px;
+     margin-left: 150px;
+     width: 330px;
+     height: 400px;
+     
+ }
+
+
+ .faceless {
+     margin-top: 1px;             /* Почему кружок не идет до верха границы? */
+     margin-left: 27.21px;
+     margin-bottom: 18.3px;
+ }
+
+
+ .title4 {
+     color: #FFFFFF;
+     font-family: Proxima Nova;     /* Как поставить этот шрифт */
+     font-weight: 600;
+     font-size: 22px;
+     line-height: 27px;
+     margin-left: 26.5px;
+     margin-bottom: 24.37px;
+
+ }
+
+
+ .subtitle {
+     color: #809FB8;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 22px;
+     margin-left: 26.5px;
+     margin-bottom: 26.63px;
+ }
+
+
+ .description3 {
+     color: #809FB8;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 21px;
+     margin-left: 27.72px;
+     margin-bottom: 53px;   
+    
+ }
+
+
+
+ .dots {                       /* Как поставить 3 точки на клавиатуре? */
+    margin-left: 279px;
+    margin-top: 23px;
+    background-color: #0C0B15;
+    cursor: pointer;
+    
+ }
