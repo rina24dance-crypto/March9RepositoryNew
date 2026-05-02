@@ -1,0 +1,154 @@
+body {
+    margin-top: 50px;
+}
+
+
+
+
+.AllCard {
+    display: flex;               
+    background-color: #000000;
+    padding: 40px 40px 40px 40px;
+
+
+
+}
+
+
+.card-block {
+    /* display: grid; */          /* Почему тут растягивается кнопка если ставлю display: grid? */
+
+
+}
+
+
+
+.Gear {
+    color: #FFFFFF;
+    padding: 5px 16px;
+    background-color: #191919;
+    width: fit-content;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 53px;
+    margin-bottom: 48px;
+}
+
+
+
+.episode {
+    color: #118DA8;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin-left: 53px;
+    margin-bottom: 18px;
+
+}
+
+
+.title {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 70.4px;
+    margin-left: 53px;
+    margin-bottom: 28px;
+
+}
+
+
+.description {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    margin-left: 53px;
+    margin-bottom: 18px;
+
+}
+
+
+.btn1 {
+    padding: 12px 15px 12px 20px;
+    background-color: #118DA8;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 53px;
+    margin-bottom: 40px;
+
+}
+
+
+
+
+/* Card 2 */
+
+
+.flex {
+    display: flex;
+    gap: 94px;
+    background-color: #000000e6;
+    
+}
+
+
+.arrow {
+    margin-bottom: 20px;
+}
+
+
+.block {
+    margin-top: 247px;
+    margin-left: 50px;
+    /* border: 1px solid white */
+}
+
+
+.short {
+    color: #118DA8;
+     font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+.name {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 79.2px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+
+.firstDescription {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 33px;
+    
+}
+
+
+.secondDescription {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    
+
+}
+
+
+.bigPicture {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
