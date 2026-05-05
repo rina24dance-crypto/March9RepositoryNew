@@ -1,0 +1,133 @@
+
+
+
+
+body {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+.cakes {
+    display: grid;
+    width: 1920px;
+    gap: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;  */  /*  Почему нижние три картинки не меняют высоту? */    /* Так устроено */
+    border: 10px solid black;               
+    /* column-gap: 10px; */
+    
+}
+
+
+
+.block {
+    background-color: #ced7e1;
+    margin-top: 100px;
+    width: 1180px;
+    height: 394px;
+    border-radius: 8px;
+    margin-left: 200px;
+    
+}
+
+
+.title {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    margin-left: 250px;
+    padding-top: 70px;
+    margin-bottom: 12px;
+}
+
+
+.subtitle {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 143%;
+    margin-left: 300px;
+    color: #2E363E;
+    margin-bottom: 36px;
+
+}
+
+
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    padding: 32px 90px 29px 28px;
+    background-color: #F2F6FA;
+    border: none;
+    border-radius: 8px;
+    height: 85px;
+    
+
+   
+    
+}
+
+
+.phone {
+    /* border: 1px solid black; */
+    
+
+}
+
+
+.phoneNumber {
+    color: #7E868E;
+    font-weight: 400;
+    width: 132px;
+    /* height: 24px; */
+    font-size: 15px;
+    line-height: 160%;
+    margin-left: 7px;
+    /* border: 1px solid black; */
+
+    
+}
+
+
+
+.btn2 {
+    padding: 29px 70.5px;
+    height: 82px;
+    margin-top: 36px;
+    background-color: #FED84C;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    color: #2E363E;
+    border: none;
+    border-radius: 8px;
+    /* margin-left: 700px; */
+    margin-bottom: 34px;
+   
+
+}
+
+
+.twoButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 270px;
+    
+}
+
+
+
+.checkMark {
+    margin-left: 360px;
+    cursor: pointer;
+}
+
+
+
+
