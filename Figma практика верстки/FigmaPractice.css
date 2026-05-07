@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    color: #FFF;
+    background-color: #141414;
+
+}
+
+
+header {
+    padding: 40px 50px 10px 50px;
+    background-color: #141414;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    width: 160px;
+    height: 33px;
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+
+.menu a:hover {
+    color: #118DA8;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+
+.image {
+    width: 653px;
+    height: 873.44px;
+}
+
+
+.content {
+    max-width: 500px;
+    margin-right: 360px;
+}
+
+
+.content h2 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 88px;
+    color: #FFFFFF;
+    margin-top: 294px;
+    margin-bottom: 74px;
+    
+    
+}
+
+
+.content h2 span {
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 88px;
+    
+}   
+
+
+
+.content p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+.platforms {
+    margin-top: 20px;
+}
+
+
+.content b {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+}
+
+
+.icons {
+    width: 32px;
+    height: 32px;
+    margin-right: 17px;
+}
+
