@@ -1,37 +1,40 @@
-
-
-
-
 body {
     background-color: whitesmoke;
     margin-left: 100px;
     /* display: flex;
     justify-content: center; */
-}
 
+}
 
 .cakes {
     display: grid;
     width: 1920px;
     gap: 9px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;  */  /*  Почему нижние три картинки не меняют высоту? */    /* Так устроено */
-    border: 10px solid black;               
+    grid-template-rows: 1fr 1fr 1fr;
+    */
+    /*  Почему нижние три картинки не меняют высоту? */
+    /* Так устроено */
+    border: 10px solid black;
     /* column-gap: 10px; */
-    
+
 }
 
 
 
 .block {
+    display: grid;
     background-color: #ced7e1;
     margin-top: 100px;
     width: 1180px;
     height: 394px;
     border-radius: 8px;
     margin-left: 200px;
-    
+
 }
+
+
+/* Visit card */
 
 
 .title {
@@ -51,7 +54,7 @@ body {
     line-height: 143%;
     margin-left: 300px;
     color: #2E363E;
-    margin-bottom: 36px;
+    margin-bottom: 1px;
 
 }
 
@@ -66,16 +69,16 @@ body {
     border: none;
     border-radius: 8px;
     height: 85px;
-    
 
-   
-    
+
+
+
 }
 
 
 .phone {
     /* border: 1px solid black; */
-    
+
 
 }
 
@@ -90,7 +93,7 @@ body {
     margin-left: 7px;
     /* border: 1px solid black; */
 
-    
+
 }
 
 
@@ -108,25 +111,709 @@ body {
     border-radius: 8px;
     /* margin-left: 700px; */
     margin-bottom: 34px;
-   
+
 
 }
 
 
-.twoButtons{
+.twoButtons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 270px;
-    
+
 }
 
 
 
 .checkMark {
-    margin-left: 360px;
+    display: flex;
+    gap: 7px;
+    margin-left: 400px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
+
+
+
+.condition {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    color: #7E868E;
+}
+
+
+
+/* Cakes */
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    /* Тут нужен именно этот columns */
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.cake1 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block1 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title1 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description1 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price1 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn1 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+/* cake2 */
+
+.cake2 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block2 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title2 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description2 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price2 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn2 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+
+/* cake 3 */
+
+
+.cake3 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block3 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title3 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description3 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price3 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn3 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+
+/* Cake 4 */
+
+.cake4 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block4 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title4 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description4 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price4 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn4 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+/* Cake 5 */
+
+
+.cake5 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block5 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title5 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description5 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price5 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn5 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+
+/* Cake 6 */
+
+
+.cake6 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block6 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title6 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description6 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price6 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn6 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+
+/* cake 7 */
+
+
+.cake7 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block7 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title7 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description7 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price7 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn7 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+/* cake 8 */
+
+
+.cake8 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block8 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title8 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description8 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price8 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn8 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+
+
+/* Cake 9 */
+
+
+
+.cake9 {
+    margin-top: 100px;
+    background-color: rgba(225, 217, 217, 0.297);
+    width: fit-content;
+}
+
+
+.block9 {
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: rgba(228, 217, 217, 0.571); */
+    width: fit-content;
+    height: 337px;
+    width: 350px;
+
+}
+
+
+.title9 {
+    color: #2E363E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    margin-bottom: 12px;
+
+    
+}
+
+
+.description9 {
+    color: #2E363E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+
+
+}
+
+
+.price9 {
+    color: #434B53;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 14px;
+
+}
+
+
+.Btn9 {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    background-color: #FED84C;
+    width: 163px;
+    height: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    padding-right: 20px;
+    margin-top: 14px;
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
 
 
 
