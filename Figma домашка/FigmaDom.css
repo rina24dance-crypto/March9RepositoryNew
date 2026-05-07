@@ -6,7 +6,7 @@ body {
 
 
 .AllCard {
-    display: flex;               
+    display: flex;
     background-color: #000000;
     padding: 40px 40px 40px 40px;
 
@@ -16,7 +16,9 @@ body {
 
 
 .card-block {
-    /* display: grid; */          /* Почему тут растягивается кнопка если ставлю display: grid? */
+    display: block;
+    /* Почему тут растягивается кнопка если ставлю display: grid? */
+    /* Потому-что я не указал ширину кнопки */
 
 
 }
@@ -82,6 +84,8 @@ body {
     border-radius: 6px;
     margin-left: 53px;
     margin-bottom: 40px;
+    width: 208px;
+    height: 51px;
 
 }
 
@@ -95,7 +99,7 @@ body {
     display: flex;
     gap: 94px;
     background-color: #000000e6;
-    
+
 }
 
 
@@ -113,7 +117,7 @@ body {
 
 .short {
     color: #118DA8;
-     font-weight: 400;
+    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
 }
@@ -134,7 +138,7 @@ body {
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 33px;
-    
+
 }
 
 
@@ -143,7 +147,7 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 33px;
-    
+
 
 }
 
@@ -152,3 +156,563 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+
+
+
+.card {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    padding: 40px;
+    border-radius: 32px;
+    width: 1300px;
+    height: 512px;
+    margin-left: 50px;
+}
+
+
+/* Card 3 */
+
+
+
+
+
+
+.BigCard {
+    display: flex;
+    width: 1300px;
+    height: 387px;
+    background-color: #000000;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+
+
+.twoWords {
+    color: #118DA8;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 59px;
+    margin-left: 60px;
+}
+
+
+.bigWords {
+    color: #FFFFFF;
+    font-weight: 400px;
+    font-size: 72px;
+    line-height: 79.2px;
+    margin-left: 60px;
+
+
+}
+
+
+
+.block2 {
+    margin-left: 227px;
+    margin-top: 60px;
+}
+
+
+.secondName {
+    color: #FFFFFFB2;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 28.8px;
+    padding: 26px 0px 27px 19px;
+    background-color: #191919;
+    width: 522px;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+
+.email {
+    color: #FFFFFFB2;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 28.8px;
+    padding: 26px 0px 27px 19px;
+    background-color: #191919;
+    width: 522px;
+
+
+}
+
+
+
+
+/* Card 4 */
+
+
+.mainBlock {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 16px;
+
+}
+
+
+.secondBlock {
+    display: flex;
+    margin-left: 84px;
+}
+
+
+
+
+.card1 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    border-radius: 32px;
+
+}
+
+
+.feedback1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+
+}
+
+
+.person1 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+/* 2 */
+
+.card2 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    margin-left: 16px;
+    border-radius: 32px;
+
+}
+
+
+.feedback2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+
+
+.person2 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+
+
+/* 3 */
+
+
+
+.card3 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    margin-left: 16px;
+    border-radius: 32px;
+
+}
+
+
+.feedback3 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+
+
+.person3 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+
+
+/* 4 */
+
+
+
+.card4 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    margin-left: 16px;
+    border-radius: 32px;
+
+}
+
+
+.feedback4 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+
+
+.person4 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+
+
+/* 5 */
+
+
+
+.card5 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    margin-left: 16px;
+    border-radius: 32px;
+
+}
+
+
+.feedback5 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+
+
+.person5 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+
+/* 6 */
+
+
+.card6 {
+    padding: 92px 60px 99px 50px;
+    background-color: #000000;
+    width: 323px;
+    height: 221px;
+    margin-left: 16px;
+    border-radius: 32px;
+
+}
+
+
+.feedback6 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+
+
+.person6 {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+
+}
+
+
+
+/* Ending */
+
+
+.firstBlock {
+    display: flex;
+    background-color: #191919;
+    margin-left: 50px;
+    height: 238px;
+    width: 1300px;
+    margin-top: 100px;
+}
+
+
+.castaway {
+    color: #FFFFFF;
+    padding-top: 50px;
+    width: 222px;
+    height: 45px;
+    margin-left: 50px;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+
+.images {
+    margin-left: 50px;
+}
+
+
+.list1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+
+}
+
+
+.list2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+
+}
+
+
+.smallBlock2 {
+    padding-top: 55px;
+    margin-left: 223px;
+
+
+}
+
+
+.smallBlock3 {
+    padding-top: 50px;
+    margin-left: 110px;
+}
+
+
+
+/* Microphone */
+
+
+.card {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    padding: 40px;
+    border-radius: 32px;
+    width: 1300px;
+    height: 512px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+
+
+.card-block {
+
+
+}
+
+
+
+.badge {
+    background-color: #191919;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    width: fit-content;
+    padding: 0 16px;
+    border-radius: 6px;
+    margin-bottom: 48.44px;
+    margin-right: 100px;
+
+}
+
+
+
+.episode {
+    color: #118DA8;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 17px;
+    width: fit-content;
+    margin-left: 15px;
+    
+}
+
+
+
+.title {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    margin-bottom: 28px;
+    width: fit-content;
+    
+    
+   
+}
+
+
+.subtitle {
+    color: #FFFFFFB2;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 18px;
+}
+
+
+
+.btn {
+    background-color: #118DA8;
+    width: 208px;
+    height: 51px;
+    border: none;
+    padding: 12px 15px 12px 20px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+
+
+/* Claviatura */
+
+
+.Card1 {
+     display: flex;
+     align-items: center;
+     background-color: #000000;
+     width: 1300px;
+     height: 545px;
+     border-radius: 32px;
+     margin-top: 20px;
+     padding: 40px 40px;
+     margin-left: 50px;
+
+ }
+
+
+ /* .card-block */
+ /* Не нужен потому-что в html я уж создал class="card-block" */
+ /* display: block; */
+
+
+ .card-block {
+
+     /* border: 1px solid wheat; */
+     height: 465px;
+     width: 778px;
+     margin-left: 53px;
+
+ }
+
+
+
+
+ .word {
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     /* padding: 7px 0px 0px 0px; */
+     background-color: #191919;
+     width: 73px;
+     height: 27px;
+     border-radius: 6px;
+     margin-bottom: 48px;
+     padding-left: 35px;
+
+ }
+
+
+ .episode3 {
+     color: #118DA8;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     margin-bottom: 18px;
+
+ }
+
+
+ .AnotherTitle {
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 64px;
+     line-height: 70.4px;
+     margin-bottom: 28px;
+
+ }
+
+
+ .AnotherDescription {
+     color: #FFFFFFB2;
+     font-weight: 400;
+     font-size: 22px;
+     line-height: 33px;
+     margin-bottom: 18px;
+     /* padding-right: 1px; */
+
+ }
+
+
+ .button {
+     width: 208px;
+     height: 51px;
+     background-color: #118DA8;
+     color: #FFFFFF;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     border-radius: 6px;
+     border: none;
+
+ }
+
