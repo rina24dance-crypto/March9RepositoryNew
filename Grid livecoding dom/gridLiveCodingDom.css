@@ -1,0 +1,429 @@
+
+
+.allPictures {
+    display: grid;
+    margin-left: 100px;
+    margin-top: 50px;
+  /*  grid-template-columns: 2fr; */   /* Одна карточка в один ряд */
+    grid-template-columns: repeat(3, 4068fr);       /* три карточки в ряд( может быть больше или меньше в зависимости от величины первого числа, величина второго не имеет значения */ 
+  /*  grid-template-columns: 1000fr 0fr;  */     /* Два любых числа с двумя fr и будут две карточки в ряд */
+   /* grid-template-columns: 44% 44% 0%;  */       /* будут стоять ровно по три карты в колонну */
+  /*  grid-template-rows: 16% 16%;      */        /* будет стоять ровно по одной карте в ряд */
+   /* grid-template-columns: 350px 350px 350px; */   /* будут стоять ровно по три в колонну */
+  /*  grid-template-rows: auto 780px;   */      /* будет ровно по одной в ряд */
+  /*  grid-template-columns: auto 350px;  */   /* будут ровно по две в колонну */
+   /* grid-template-columns: auto 0px;  */     /* будут две карточки в колонне далеко друг от друга */
+  /*  grid-template-rows: minmax(100px, 1fr); */   /* будут по одной ровно в ряд в независимости от того rows или column написано */
+    /* column-gap: 30px; */
+    row-gap: 30px;             /* row-gap это gap сверху вниз */
+    width: 730px;
+    column-gap: 30px;           /* column-gap это gap в стороны */
+}
+
+
+
+/* 1*/
+
+
+.picture1 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    margin: 0px;
+}
+
+
+.name1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title1 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
+
+
+/* 2*/
+
+
+.picture2 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+
+.name2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title2 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
+
+
+
+/* 3*/
+
+
+.picture3 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    /* margin-bottom: 30px; */
+}
+
+
+.name3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title3 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
+
+
+
+/* 4*/
+
+
+.picture4 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    /* margin-bottom: 30px; */
+}
+
+
+.name4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title4 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
+
+
+
+/* 5*/
+
+
+.picture5 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    /* margin-bottom: 30px; */
+}
+
+
+.name5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title5 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
+
+
+
+
+/* 6*/
+
+
+.picture6 {
+    width: 350px;
+    height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+    width: fit-content;
+    /* margin-bottom: 30px; */
+}
+
+
+.name6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.title6 {
+    color: #2C2D35;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+
+.materials6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+
+.price {
+    color: #598D66;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn1 {
+    color:#598D66;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding: 21px 106.5px 21px 106.5px;
+    background-color: #E1EDE6;
+    border: 1px solid #598D66;
+    
+
+}
+
+
