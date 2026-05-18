@@ -1,0 +1,88 @@
+/* 1 */
+
+.title {
+    font-family: "Lunasima", sans-serif;
+    /* Здесь я подключаю шрифт через google fonts link, которую я добавил в html в "head"  */
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 2 */
+
+@font-face {
+    font-family: "Raleway";
+    /* Здесь я подключаю шрифт через локальное подключение шрифтов, тоесть я скачиваю все шрифты и импортирую в папку googleFontsDom */
+    src: url(./static2/Raleway-Light.ttf);
+
+}
+
+.intro {
+    color: rgb(2, 62, 2);
+    font-family: Raleway;
+    font-size: 18px;
+}
+
+
+/* 3 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+/* Здесь я подключаю шрифт через google fonts import */
+
+
+
+.content {
+    font-family: "Roboto", sans-serif;
+    color: rgba(78, 31, 31, 0.63);
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+
+
+/* 4 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500& display=swap');
+
+/* Добавляю momtserrat через import */
+
+.ending {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+
+/* 5 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+
+/* Добавляю roboto condensed через import */
+
+.ending2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    font-style:italic;
+
+}
+
+
+/* 6 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Добавляю сразу 4 шрифта через import */
+
+.ending3 {
+    font-family: "Raleway", sans-serif, Montserrat, Roboto;
+    font-weight: 800;
+    font-size: 16px;
+    font-style: italic;
+
+}
