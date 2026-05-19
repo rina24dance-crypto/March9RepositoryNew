@@ -1,0 +1,145 @@
+.first {
+    border: 1px solid black;
+    /* width: fit-content; */
+    position: relative;
+}
+
+
+.first::before {
+    content: "tomorrow is a good day";          /* before вставляет содержимое перед содержимым выбранного элемента */
+    display: block;
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+.second {
+    border: 1px solid black;
+    width: fit-content;
+
+
+}
+
+
+.second::before {
+    content: "I will have a great time soon";
+    display: block;
+    margin-bottom: 10px;
+    color: brown;
+    font-size: 18px;
+
+}
+
+
+
+h1 {
+    color:rgb(71, 53, 53);
+}
+
+
+h1::after {
+    content: "It was such a great story";          /* after вставляет содержимое после содержимого выбранного элемента */
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: rgba(109, 12, 12, 0.842)
+}
+
+
+
+h2 {
+    background-color: blueviolet;
+    width: fit-content;
+}
+
+
+h2::after {
+    content: "I am doing it now for $!!!";
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: darkgreen;
+}
+
+
+.line {
+      font-weight: bold;
+      color:rgb(71, 53, 53);
+      text-transform: uppercase;
+   
+}
+
+
+.line::before {
+    content: "You will do it";
+    font-weight: 500;
+    display: block;
+    background-color: bisque;
+    width: fit-content;
+}
+
+
+.line::after {
+    content: "You did it";
+    font-weight: 700;
+    display: block;
+    color:rgb(96, 34, 34);
+    background-color: blueviolet;
+    width:fit-content;
+    margin-bottom: 30px;
+}
+
+
+.line::first-letter {                         /* First-letter стилизует первую букву текста внутри элемента */
+    color: green;
+    font-size: 30px;
+}
+
+
+
+.Rina::first-line {                           /* First-line стилизует первую строку текста внутри элемента */
+    text-transform: capitalize;
+    background-color: rgb(25, 192, 192);
+    width: fit-content;
+    font-weight: 700;
+
+}
+
+
+.Rina::before {
+    content: "Rina is gonna make it";
+    display: block;
+    background-color: aquamarine;
+    /* border: 1px solid black; */
+    width: fit-content;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.Rina::after {
+    content:"Rina has done it";
+    display: block;
+    font-size: 24px;
+    color: red;
+    background-color: beige;
+    font-weight: bolder;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+
+
+.Rina {
+    text-transform: uppercase;
+    /* font-weight: 300; */
+
+}
+
+
+.Rina::first-letter {
+    font-size: 36px;
+}
