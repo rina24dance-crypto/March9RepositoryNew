@@ -1,0 +1,148 @@
+
+.block1 {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.427);       /* Создал тень от блока */
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+
+
+.block2 {
+    box-shadow: 30px 30px 100px 50px rgba(1, 84, 45, 0.427);
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+}
+
+
+.block3 {
+    box-shadow: 0px 0px 0px 10px rgba(167, 5, 5, 0.427);
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+
+}
+
+
+.block4 {
+    box-shadow: 2px 5px 10px 0px darkgreen;
+    width: 130px;
+    height: 130px;
+}
+
+
+
+.allBlocks {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+
+
+h1 {
+   text-shadow:  2px 2px 5px rgba(0,0,0,0.5);       /* Тень текста */
+}
+
+
+h2 {
+    text-shadow: 200px 10px 0px red;
+}
+
+h3 {
+    text-shadow: 3px 3px 1px rgba(1, 84, 45, 0.427);
+    color:rgba(1, 84, 45, 0.427)
+}
+
+
+h4 {
+    text-shadow: 6px 6px 6px rgba(220, 39, 166, 0.817);
+    color: orange;
+     
+}
+
+
+
+.element {
+    background: linear-gradient(to left, red, green, yellow);         /* линейный градиент */
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.element2 {
+    background: linear-gradient(to right, black, blue, aqua);
+    width: 120px;
+    height: 120px;
+
+}
+
+
+.element3 {
+    background: linear-gradient(45deg, black, pink, orange);
+    width: 130px;
+    height: 130px;
+}
+
+
+.element4 {
+    background: linear-gradient(to bottom, yellow, darkred, lightgreen);
+    width: 140px;
+    height: 140px;
+}
+
+
+.element5 {
+    background: linear-gradient(to top, brown, aqua, orange);
+    width: 140px;
+    height: 140px;
+}
+
+
+.allElements {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+
+.radial1 {
+     background: radial-gradient(circle, red, yellow, green);         /* радиальный градиент */
+     width: 200px;
+     height: 200px;
+     margin-bottom: 50px;
+}
+
+
+.radial2 {
+    background: radial-gradient(ellipse closest-corner at 15%, green, red, yellow);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+
+.radial3 {
+    background: radial-gradient(ellipse farthest-corner at 100%, rgb(11, 248, 11), rgba(255, 0, 0, 0.484), rgba(255, 255, 0, 0.352));
+    width: 200px;
+    height: 200px;
+}
+
+
+.radial4 {
+    background: radial-gradient(ellipse farthest-corner at 50%, lightgreen, darkred, brown);
+    width: 200px;
+    height: 100px;
+}
+
+
+.AllElements2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+
