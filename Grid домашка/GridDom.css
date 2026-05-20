@@ -1,6 +1,6 @@
 body {
     background-color: whitesmoke;
-    margin-left: 100px;
+    margin-left: 25px;
     /* background-color: #081130; */
     /* display: flex;
     justify-content: center; */
@@ -376,19 +376,21 @@ body {
     margin-left: 70px;
     width: 715px;
     margin-top: 14px;
+    margin-bottom: 100px;
 
 }
 
 .cakes {
     display: grid;
-    width: 1920px;
+    width: 100px;
+    margin-left: 0px;
     gap: 9px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
     /*  Почему нижние три картинки не меняют высоту? */
     /* Так устроено */
-    border: 10px solid black;
+    /* border: 10px solid black; */
     /* column-gap: 10px; */
 
 }
