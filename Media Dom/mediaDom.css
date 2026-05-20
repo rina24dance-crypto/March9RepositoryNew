@@ -1,5 +1,5 @@
 body {
-    /* padding: 100px 100px 100px 100px; */
+    margin: 0px;
 }
 
 .poloski {
@@ -133,7 +133,6 @@ body {
 .block3 {
     display: flex;
     margin-left: 100px;
-    background-color: whitesmoke;
     margin-bottom: 50px;
     width: 1110px;
 }
