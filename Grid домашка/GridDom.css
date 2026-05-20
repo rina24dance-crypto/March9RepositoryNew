@@ -4,6 +4,7 @@ body {
     /* background-color: #081130; */
     /* display: flex;
     justify-content: center; */
+    
 
 }
 
@@ -382,8 +383,7 @@ body {
 
 .cakes {
     display: grid;
-    width: 100px;
-    margin-left: 0px;
+    width: 1920px;
     gap: 9px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -413,7 +413,7 @@ body {
 
 
 .block {
-    margin-left:100px;
+    margin-left: 100px;
 }
 
 
@@ -544,16 +544,17 @@ body {
     margin-top: 100px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
 .block1 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -612,20 +613,21 @@ body {
 
 /* cake2 */
 
-.cake2 {
+ .cake2 {
     margin-top: 100px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
-}
+    height: 582px;
 
+}
 
 .block2 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -680,7 +682,7 @@ body {
 
 
 }
-
+ 
 
 
 /* cake 3 */
@@ -690,16 +692,17 @@ body {
     margin-top: 100px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
 .block3 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -760,19 +763,20 @@ body {
 /* Cake 4 */
 
 .cake4 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
 .block4 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -833,19 +837,20 @@ body {
 
 
 .cake5 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
 .block5 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -907,19 +912,20 @@ body {
 
 
 .cake6 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
 .block6 {
     margin-top: 50px;
-    margin-left: 30px;
+    padding-left: 44px;
     /* background-color: rgba(228, 217, 217, 0.571); */
     width: fit-content;
     height: 337px;
-    width: 350px;
+    width: 320px;
 
 }
 
@@ -981,9 +987,10 @@ body {
 
 
 .cake7 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
@@ -1054,9 +1061,10 @@ body {
 
 
 .cake8 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
@@ -1129,9 +1137,10 @@ body {
 
 
 .cake9 {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: rgba(225, 217, 217, 0.297);
     width: fit-content;
+    height: 582px;
 }
 
 
@@ -1209,7 +1218,7 @@ body {
     line-height: 150%;
     cursor: pointer;
     color: #7E868E;
-    
+
 
 }
 
