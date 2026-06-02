@@ -9,6 +9,7 @@ b = 5
 c = 2
 
 
+
 let formula = a + b + c
 console.log(formula)
 
@@ -18,7 +19,7 @@ console.log(formula)
 formula = a * b / c
 console.log(formula)
 
-formula = a % c
+formula = a % b
 console.log(formula)
 
 
@@ -63,11 +64,10 @@ console.log(a2> b2 && a2> 0 && b2> 0)    /*  Число `a` больше `b`, и
 
 
 c2 = 7
+console.log(c2<10 || c2 == 2)   /*  Число `c` меньше 10 или равно 2.   */
 
-console.log(c<10 || c2 == 2)   /*  Число `c` меньше 10 или равно 2.   */
 
-
-console.log(a/c !=5)       /*  Результат деления `a` на `c` не равен 5.  */
+console.log(a2/c2 ==5)       /*  Результат деления `a` на `c` не равен 5.  */
 
 
 
