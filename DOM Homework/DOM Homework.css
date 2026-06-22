@@ -1,0 +1,10 @@
+
+.main {
+    /* display: block;    Почему не работает? */
+    
+}
+
+
+.box5 {
+    display: flex;
+}
