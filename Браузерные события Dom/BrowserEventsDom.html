@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="BrowserEventsDom.js" defer></script>
+</head>
+
+<body>
+
+    <style>
+        .Task1 {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .containers {
+            display: flex;
+            gap: 10px
+        }
+    </style>
+
+
+
+    <div class="Task1">
+
+        <!-- Task 1 -->
+
+        <button onclick="alert('Кнопка нажата!')">Нажми на меня</button>
+
+        <!-- 1.2 -->
+
+        <button onclick=buttonClick()>Нажми меня</button>
+
+        <script>
+            function buttonClick() {
+                console.log("Кнопка нажата!");
+                alert('Кнопка нажата')
+            }
+        </script>
+
+        <!-- 1.3 -->
+
+        <button onclick="alert('Button clicked!')">Click the button</button>
+
+        <!-- 1.4 -->
+
+        <button onclick="buttonClick()">Push me</button>
+        <!-- Имя onclick должно совпадать с именем в объявленной функции  -->
+
+        <script>
+            function buttonClick() {         //Почему нет ошибки? Здесь нет если сделать опечатку в buttonClick(), но ошибка будет если сделать опечатку где имя onclick
+                console.log("Button pushed!");
+                alert('Button pushed!')
+
+            }
+        </script>
+
+    </div>
+
+    <!-- Task 2 -->
+
+    <button id="jsButton">Нажми меня</button>
+
+    <script>
+        const button = document.querySelector("#jsButton");
+
+        button.addEventListener("click", function () {
+            console.log("Событие обработано через JS");
+        });
+        // button.addEventListener("click", () => {        // Тоже самое но через стрелочную функцию
+        //     console.log("Событие обработано через JS");
+        // });
+    </script>
+
+
+    <!-- 2.2 -->
+
+    <button id="jsButton2">Опять нажми</button>
+
+    <script>
+        const newButton = document.querySelector('#jsButton2');
+
+        newButton.addEventListener("click", function () {
+            console.log("Сделано через JS")
+        })
+    </script>
+
+
+    <!-- 2.3 -->
+
+    <button id="jsButton3">Еще нажми</button>
+
+    <script>
+        const anotherButton = document.querySelector('#jsButton3')
+
+        anotherButton.addEventListener("click", function () {
+            console.log('Добавлено через JS')
+        })
+    </script>
+
+    <div class="containers">
+
+        <!-- Task 3 -->
+
+        <div id="myDiv"></div>
+
+
+        <style>
+            #myDiv {
+                width: 200px;
+                height: 200px;
+                background-color: lightgrey;
+                border: 1px solid black;
+                margin-top: 10px;
+            }
+        </style>
+
+
+
+        <script>
+            const div = document.querySelector("#myDiv");
+
+            // Изменение цвета при клике
+            div.addEventListener("click", function () {
+                div.style.backgroundColor = "blue";
+            });
+
+            // Сообщение при наведении курсора
+            div.addEventListener("mouseover", function () {
+                console.log("Элемент нажат");
+            });
+        </script>
+
+
+        <!-- 3.2 -->
+
+
+        <div id="myDiv2"></div>
+
+        <style>
+            #myDiv2 {
+                width: 200px;
+                height: 200px;
+                background-color: brown;
+                border: 1px solid black;
+                margin-top: 10px;
+            }
+        </style>
+
+        <script>
+            const div2 = document.querySelector('#myDiv2');
+
+            // Изменение цвета при клике
+
+            div2.addEventListener("click", function () {
+                div2.style.backgroundColor = "yellow"
+
+            })
+            // Сообщение при наведении курсора
+
+            div2.addEventListener("mouseover", function () {
+                console.log("Элемент опять нажат")
+            })
+
+        </script>
+
+        <!-- 3.3 -->
+
+
+        <div id="myDiv3"></div>
+
+
+        <!-- div (от англ. division — «раздел») — это универсальный блочный контейнер для группировки элементов или создания блоков на странице. -->
+
+        <!-- id — это уникальный идентификатор элемента; Означает: Создать div и присвоить ему имя
+
+        myDiv3. Это имя можно использовать в CSS и JavaScript.
+
+        в CSS:
+
+        #myDiv {
+        background-color: blue;
+        }
+         
+        Символ # означает поиск элемента по id.
+
+
+        в Java script:
+        
+        const div = document.querySelector("#myDiv");
+
+        Браузер найдёт элемент с id="myDiv". -->
+
+
+
+        <!-- CSS -->
+
+        <style>
+            #myDiv3 {
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+                margin-top: 10px;
+                border: 1px solid black;
+            }
+        </style>
+
+
+        <!-- JS -->
+
+        <script>
+
+            const variableName = document.querySelector("#myDiv3")
+
+            variableName.addEventListener("click", function () {
+                variableName.style.backgroundColor = "green"
+            })
+
+            variableName.addEventListener("mouseover", function () {
+                console.log("Еще раз навел")
+            })
+
+
+        </script>
+
+
+    </div>
+
+
+    <!-- Task 4 -->
+
+    <input type="text" id="textInput">
+
+    <script>
+        const input = document.querySelector("#textInput");
+
+        input.addEventListener("keyup", function (event) {       //Почему выводит undefined?   //Здесь сохраняется то что вывелось в консоль при следующем нажатии, а ниже где onkeydown нет
+            console.log(event.target.value);     //event.target.value это текст внутри <input>, который будет выводить в консоль содержимое текстового поля
+        });
+    </script>
+
+
+
+    <!-- Another way -->
+
+    <input type="text" onkeydown="console.log('Клавиша нажата:', event.key)">
+
+
+
+    <!-- Task 5 -->
+
+
+    <a href="https://example.com" id="myLink">Перейти на сайт</a>
+
+    <script>
+        const link = document.getElementById('myLink');
+
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Отменяет переход по ссылке
+            console.log('Переход по ссылке отменен');
+        });
+    </script>
+
+
+    <!--5.2-->
+
+    <a href="https://example2.com" id="myLink2">Опять перейти на сайт</a>
+
+    <script>
+        const newLink = document.getElementById('myLink2');
+
+        newLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            console.log('Link cancelled')
+        });
+    </script>
+
+    <!--5.3-->
+
+    <a href="https://example3.com" id="myLink3">Перейти на очередной сайт</a>
+
+    <script>
+        const newLink2 = document.getElementById('myLink3')
+
+        newLink2.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('No link')
+        })
+    </script>
+
+
+    <!-- 5.4 -->
+
+    <a href="https:// example4.com" id="myLink4">Перейти на четвертый сайт</a>
+
+    <script>
+        const newLink3 = document.getElementById('myLink4')
+
+        newLink3.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('Another prevention')
+        })
+    </script>
+
+
+    <!-- Task 6 -->
+
+    <ul id="list">
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+    </ul>
+
+   <script>
+    const newList = document.getElementById('list')
+
+    list.addEventListener('click', function(event) {       // Только один обработчик событий; Это и есть делегирование событий
+         if (event.target.tagName === 'LI') {
+      console.log(event.target.textContent);
+    }
+  });
+    
+   </script>
+
+
+       <!-- 6.2 -->
+
+       <ul id="list2">
+        <li>fourth element</li>
+        <li>fifth element</li>
+        <li>sixth element</li>
+       </ul>
+
+       <script>
+         const newList2 = document.getElementById('list2')
+
+         list2.addEventListener('click', function(event) {
+            if (event.target.tagName === 'LI') {
+                console.log(event.target.textContent)
+        
+            }
+         })
+
+
+
+       </script>
+
+
+     <!-- 6.3 -->
+
+     <ul id="list3">
+        <li>seventh element</li>
+        <li>eight element</li>
+        <li>ningth element</li>
+     </ul>
+
+     <script>
+        const newList3 = document.getElementById('list3');
+
+        list3.addEventListener('click', function(event) {
+            if (event.target.tagName) {
+                console.log(event.target.textContent)
+            }
+
+        })
+
+        
+     </script>
+
+
+     <!-- Task 7 -->
+
+     <input type="text" id="keyboardInput">
+
+     <script>
+        const input2 = document.getElementById('keyboardInput') 
+        input2.addEventListener('keyup', function(event) {
+            console.log(event.code)
+        })
+     </script>
+
+     <!-- 7.2 -->
+
+     <input type="text" id="keyboardInput2">
+
+     
+     <script>
+        const input3 = document.getElementById('keyboardInput2')
+        input3.addEventListener('keydown', function(event) {     //Почему тут ничего не выводится если я ставлю code, а не например keydown?     Потому-что code не является названием события; Это например keydown, keyup, input, click    
+            console.log(event.code)          // Почему выводит undefined когда вывожу event.keydown? Потому-что у объекта event нет свойства keydown; У него есть свойства например key и code
+        })
+     </script>
+
+
+    <!-- 7.3 -->
+
+    <input type="text" id="keyboardInput3">
+
+    <script>
+        const input4 = document.getElementById('keyboardInput3')
+        input4.addEventListener('keydown', function(event) {
+            console.log(event.code)
+        })
+    </script>
+
+
+     <!-- 7.4 -->
+
+     <input type="text" id="keyboardInput4">
+
+     <script>
+        const input5 = document.getElementById('keyboardInput4')
+        input5.addEventListener('keydown', function(event) {
+            console.log(event.code)
+        })
+     </script>
+
+    
+                   
+</body>
+
+</html>
