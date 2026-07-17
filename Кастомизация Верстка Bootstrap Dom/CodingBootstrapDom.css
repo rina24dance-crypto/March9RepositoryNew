@@ -1,0 +1,638 @@
+ .nav-link {
+     margin: 0 12px;
+     color: #18191F;
+ }
+
+ .nav-link:hover {
+     color: #4CAF4F;
+ }
+
+ .btn-success {
+     border-radius: 6px;
+     padding: 10px 24px;
+ }
+
+
+ /* 2 */
+
+ body {
+     background: #f5f7fa;
+     /* Что тут значит каждый код? */
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .hero {
+     min-height: 100vh;
+     /* 100vh означает 100% высоты окна браузера; vh это viewport height */
+     display: flex;
+     align-items: center;
+ }
+
+ .hero-title {
+     font-size: 64px;
+     font-weight: 600;
+     color: #4d4d4d;
+     line-height: 1.2;
+ }
+
+
+ @media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+
+
+ .hero-title span {
+     color: #4CAF4F;
+ }
+
+ .hero-text {
+     margin: 25px 0;
+     color: #717171;
+     font-size: 16px;
+ }
+
+ .btn-success {
+     background: #4CAF4F;
+     border: none;
+     border-radius: 6px;
+     padding: 14px 36px;
+ }
+
+ .btn-success:hover {
+     background: #43a047;
+ }
+
+
+
+
+
+ /* 3 */
+
+
+ /* .Fclients {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.info {
+    font-weight: 400
+}
+
+.new-logo:hover {
+    transform: scale(1.05)
+}
+
+.new-logo {
+    transition: 0.3s;
+} */
+
+
+
+
+ /* 3.2 */
+
+ .clients {
+     padding: 70px 0;
+ }
+
+ .clients h2 {
+     font-size: 48px;
+     font-weight: 600;
+ }
+
+
+ @media (max-width: 576px) {
+    .clients h2 {
+        font-size: 32px;
+    }
+ }
+
+ .clients p {
+     color: #717171;
+     margin-bottom: 60px;
+ }
+
+ .client-logo {
+     height: 55px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     opacity: 0.8;
+     /* opacity это прозрачность*/
+     transition: .3s;
+ }
+
+ .client-logo:hover {
+     opacity: 1;
+     transform: scale(1.05);
+     /* scale(1.05) это увеличение картинки в масштабе на 5% при наведении курсора */
+ }
+
+ .client-logo img {
+     max-width: 100%;
+     max-height: 40px;
+     /* filter: grayscale(100%); */
+     /* filter - визуальный эффект, а grayscale делвет изображение черно-белым */
+
+ }
+
+
+
+
+ /* 4 */
+
+
+ .title1 {
+     max-width: 220px;
+     margin: 15px auto;
+ }
+
+
+ .text-muted {
+     max-width: 180px;
+     margin: 15px auto;
+ }
+
+
+ h2 {
+     font-weight: 600;
+ }
+
+
+ .title1 {
+     font-weight: 700;
+ }
+
+
+ .text-muted {
+     font-size: 14px;
+ }
+
+
+
+ /* 5 */
+
+
+ .description {
+     /* width: 601px; */
+     color: #717171;
+     font-size: 14px;
+     font-weight: 400;
+     /* margin-bottom: 30px; */
+ }
+
+
+ h2 {
+     /* font-size: 36px;
+    font-weight: 600 */
+     color: #4D4D4D;
+ }
+
+
+
+ /* 6 */
+
+
+ /* .newDescription {
+    color: #18191F;
+ } */
+
+
+ /* 6.2 */
+
+
+ body {
+     background: #f8f9fa;
+ }
+
+ .achievement {
+     padding: 80px 0;
+ }
+
+ .title {
+     font-size: 38px;
+     font-weight: 600;
+     color: #4D4D4D;
+     line-height: 1.2;
+ }
+
+ .title span {
+     color: #4CAF4F;
+ }
+
+ .subtitle {
+     color: #18191F;
+     margin-top: 15px;
+ }
+
+ .stat-item {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+ }
+
+ /* .stat-icon {
+     font-size: 40px;
+     color: #45b64a;
+ } */
+
+ .number {
+     font-size: 32px;
+     font-weight: 700;
+     color: #4d4d4d;
+     line-height: 1;
+ }
+
+ .label {
+     color: #777;
+     font-size: 18px;
+     margin-top: 5px;
+ }
+
+
+ .stat-item img {
+     flex-shrink: 0;
+ }
+
+
+ .label {
+     color: #717171;
+ }
+
+
+
+ /* 6.3 */
+
+
+
+ /* .achievement2 {
+    padding: 80px 0
+ }
+
+
+ .title2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #4D4D4D;
+    line-height: 44px;
+
+ }
+
+ .title2 span {
+    color: #4CAF4F;
+ }
+
+
+ .subtitle2 {
+    color: #18191F;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+ }
+ */
+
+ /* .stat-item2 {
+    
+    gap: 20px;
+ }
+
+
+
+ .number2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #4D4D4D;
+ }
+
+
+ .person {
+    color: #717171;
+    font-weight: 400;
+    font-size: 16px;
+
+ }
+
+
+ .stat-item img {
+    flex-shrink: 0;
+ } */
+
+
+
+
+ /* 7 */
+
+
+ .title3 {
+     font-size: 36px;
+     font-weight: 600;
+     color: #4D4D4D;
+ }
+
+
+ .newSubtitle {
+     font-weight: 400;
+     font-size: 14px;
+     color: #717171;
+ }
+
+
+ .btn {
+     width: 161px;
+ }
+
+
+ .newSubtitle {
+     max-width: 600px;
+     line-height: 1.6;
+ }
+
+
+
+ .title3 {
+     max-width: 600px;
+ }
+
+
+
+ /* 8 */
+
+
+ .name {
+     font-size: 20px;
+     font-weight: 600;
+     color: #4CAF4F;
+ }
+
+
+ .Dragon {
+     color: #89939E;
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+
+ /* .anotherDescription {
+    width: 768px;
+} */
+
+
+ .customer {
+     color: #4CAF4F;
+     font-weight: 600;
+ }
+
+
+ /* 8.2 */
+
+
+ /* .customers {
+    background: #f5f7f9;
+}
+
+
+.customers img {
+    max-width: 100%;
+}
+
+
+.customer-text {
+    color: #717171;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+h5 {
+    font-size: 20px;
+}
+
+
+.d-flex img {
+    object-fit: contain;    
+}
+
+
+.right {
+    margin-bottom: 20px;
+    padding-left: 80px;
+   
+} */
+
+
+
+ /* 9 */
+
+
+ /* .blog {
+    width: 628px;
+} */
+
+
+ .heading {
+     color: #4D4D4D;
+     font-weight: 600;
+ }
+
+
+ .blog {
+     font-weight: 400;
+ }
+
+
+
+
+ /* 10 */
+
+
+ body {
+     /* background-color: #18191F; */
+ }
+
+
+ /* .foreign {
+    font-size: 64px;
+    color: #4D4D4D;
+    font-weight: 600;
+}
+
+
+@media(max-width:992px) {
+
+    .foreign {
+        font-size: 48px;
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .foreign {
+        font-size: 32px;
+    }
+
+} */
+
+
+ h1 {
+     font-size: clamp(32px, 5vw, 64px);
+     color: #263238;
+     font-weight: 600;
+
+ }
+
+
+
+
+ /* 10.2 */
+
+ /* .demo-section {
+    background-color: #f5f7f9;
+}
+
+
+.demo-section h1 {
+    color: #263238;
+    line-height: 1.15;
+}
+ */
+
+
+
+ /* 11 */
+
+
+ /* display: flex;            // Это как замена того что в bootstrap стоит где footer
+ align-items: center;  */
+
+ .blocks .Title {
+     font-size: 20px;
+     margin-bottom: 10px;
+     color: #FFFFFF;
+
+ }
+
+
+ .blocks .link {
+     font-size: 14px;
+     margin-bottom: 10px;
+     color: #F5F7FA;
+ }
+
+
+ .date {
+     font-size: 20px;
+ }
+
+
+ /* .footer-btn {
+     width: 255px;
+     height: 40px;
+     color: #D9DBE1;
+     font-weight: 400;
+     font-size: 14px;
+     display: flex;
+     /* gap: 90px; */
+ /* justify-content: space-between; */
+ /* Тут лучше justify-content использовать потому-что gap: 90px работает только тогда когда текст имеет определенную длину */
+ /* align-items: center;
+ } */
+
+
+
+ .footer {
+     background-color: #263238;
+     /* height: 260px; */
+     padding: 50px 0;
+     /* значит padding top и bottom по 50px, а left и right 0 */
+
+
+ }
+
+
+ .nex {
+     color: #FFFFFF;
+ }
+
+
+ .copyright {
+     font-size: 14px;
+     color: #F5F7FA;
+ }
+
+
+ .reserved {
+     font-size: 14px;
+     color: #F5F7FA;
+ }
+
+
+
+ .form-control {
+     background-color: grey;
+
+ }
+
+
+ .lastClass {
+     position: relative;
+     display: flex;
+     align-items: center;
+
+
+ }
+
+ .footer-btn {
+     width: 350px;
+     height: 40px;
+     /* background-color: #515B60; */
+ }
+
+ .footer-btn::placeholder {
+     color: white;
+
+ }
+
+
+ .footer-btn:focus {
+     background-color: #515B60;
+     color: white;
+     border: none;
+     box-shadow: none;
+     /* убрать синее свечение Bootstrap */
+ }
+
+
+ .email-icon {
+     position: absolute;
+     left: 190px;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+
+
+
+
+
+
+ /* li span {
+    font-size: 20px;
+    padding-bottom: 10px;
+ }
+
+
+ li {
+    font-size: 14px;
+ } */

@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CodingBootstrapDom.css">
+
+    <title>Nexcent</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <!--navbar это основной класс Bootstrap для создания панели навигации-->
+        <!-- navbar автоматически задает:  display: flex, выравнивание элементов; базовые отступы; стили для меню. -->
+        <!--navbar-expand-lg отвечает за адаптивность; lg >= 992px-->
+        <div class="container">
+            <!--container ограничивает ширину сайта, без него элементы будут растягиваться на весь экран, bootstrap автоматически делает поля слева и справа-->
+
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <!--navbar-brand это специальный bootstrap класс для логотипа, он делает его немного крупнее-->
+                <img src="Picture1 (2).svg" width="25" height="34">
+                Nexcent
+            </a>
+
+            <ul class="navbar-nav mx-auto">
+                <!--navbar-nav говорит bootstrap что это список навигации и bootstrap делает красивое горизонтальное меню-->
+                <!--mx-auto (m - margin) (x- слева и справа) (auto - автоматические отступы)-->
+                <li class="nav-item"> <!--nav-item понимает что это элемент меню-->
+                    <a class="nav-link active" href="#">Home</a>
+                    <!--nav-link оформляет ссылку как пункт меню, а bootstrap добавляет отступы, цвет, hover, cursor-->
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feature</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonial</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+
+            </ul>
+
+            <div class="d-flex align-items-center gap-3"> <!--d-flex это display:flex-->
+
+                <a href="#" class="text-success text-decoration-none"> <!--href="#" делает текст (Login) ссылкой-->
+                    Login
+                </a>
+
+                <a href="#" class="btn btn-success px-4"> <!--px(p - padding), (x - слева и справа)-->
+                    <!--btn это главный класс Bootstrap для кнопок, без него ссылка выглядит как обычный текст; btn-success делает кнопку зеленой -->
+                    Sign up
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--2 -->
+
+    <!-- <img src="Illustration.svg" width="391" height="407" -->
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center"> <!--row align-items-center выравнивает элементы по вертикали-->
+
+                <!-- Левая колонка -->
+                <div class="col-lg-6 text-center text-lg-start"> <!--lg start это?-->
+                    <!--Это адаптивный класс; На маленьких экранах(<= 992px) - текст по центру, на больших ( >= 992px ) - текст по левому краю-->
+
+                    <h1 class="hero-title">
+                        Lessons and insights
+                        <br>
+                        <span>from 8 years</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Where to grow your business as a photographer:
+                        site or social media?
+                    </p>
+
+                    <a href="#" class="btn btn-success btn-lg px-5">
+                        Register
+                    </a>
+
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+                    <img src="illustration.svg" width="391" height="407" class="img-fluid" alt="Illustration">
+                    <!--Что тут значит img-fluid? Он делает изображение адаптивным не позволяя ему выходить за границы во время изменения ширины высоты экрана-->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 3 -->
+
+    <!-- <div class="container">
+
+        <h1 class="Fclients text-center">
+            Our Clients</h1>
+
+        <p class="info text-center text-muted mb-5">
+            We have been working with some Fortune 500+ clients</p> -->
+
+
+
+    <!--<div class="allPics d-flex justify-content-around gap-5">--> <!--gap работает только с d-flex и d-grid -->
+    <!-- <div class="row justify-content-center align-items-center g-5">
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic1.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic2.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic3.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic4.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic5.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic6.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="new-logo">
+                        <img src="AssetsBootstrap/miniPic7.svg" width="48" height="48" class="img-fluid">
+                    </div>
+                </div>
+
+
+            </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+
+    <!-- 3.2 -->
+
+
+
+    <section class="clients">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2>Our Clients</h2>
+                <p>We have been working with some Fortune 500+ clients</p>
+            </div>
+
+            <div class="row justify-content-center align-items-center g-5">
+                <!--row и col должны быть вместе как на 157 и 160 строке чтобы была строчка в длину-->
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic1.svg" width="48" height="48" alt="Logo 1">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <!--col-6 это по два элемента в строку когда экран меньше 768px-->
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic2.svg" width="48" height="48" alt="Logo 2">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <!--col-md-4 это по три элемента в строку когда экран больше 768px-->
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic3.svg" width="48" height="48" alt="Logo 3">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <!--col-lg означает что каждая колонка получает одинаковую ширину при размере экрана больше 992px тоесть в этом случае все 7 элементов будут идти в одну строчку-->
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic4.svg" width="48" height="48" alt="Logo 4">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic5.svg" width="48" height="48" alt="Logo 5">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic6.svg" width="48" height="48" alt="Logo 6">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg text-center ">
+                    <div class="client-logo">
+                        <img src="AssetsBootstrap/miniPic7.svg" width="48" height="48" alt="Logo 7">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--4-->
+
+
+
+    <section class="community">
+        <div class="container">
+            <div class="system text-center mb-5">
+                <h2>Manage your entire community in a single system</h2>
+                <p class="text-muted"> is Nexcent suitable for</p>
+            </div>
+
+
+            <div class="row text-center justify-content-between">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="h-100 p-4">
+                        <img src="AssetsBootstrap/Icon1.svg" width="65" height="56">
+                        <h3 class="title1">Membership Organisations</h3>
+                        <p class="text-muted">Our membership management software provides full automation of
+                            membership
+                            renewals and payments</p>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="h-100 p-4">
+                        <img src="AssetsBootstrap/Icon2.svg" width="65" height="56">
+                        <h3 class="title1">National Associations</h3>
+                        <p class="text-muted">Our membership management software provides full automation of
+                            membership
+                            renewals and payments</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="h-100 p-4">
+                        <img src="AssetsBootstrap/Icon3.svg" width="65" height="56">
+                        <h3 class="title1">Clubs and Groups</h3>
+                        <p class="text-muted">Our membership management software provides full automation of
+                            membership
+                            renewals and payments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- 5 -->
+
+    <!-- px-5 - padding по горизонтали и вертикали (равномерно)
+    py-5  сверху и снизу 
+    pt-5 сверху
+    pb-5 снизу
+    ps-5 слева (start)
+    pe-5 справа (end)
+    p-5 со всех сторон -->
+
+
+
+    <section class="bigPicture">
+        <div class="container">
+            <div class="row align-items-center text-center justify-content-between">
+                <div class="col-12 col-md-6 col-lg-5 text-center">
+                    <img src="AssetsBootstrap/BigPictureSvg.svg" width="442" height="433" class="img-fluid">
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 text-start">
+                    <h2 class="fw-semibold fs-2 mb-2">The unseen of spending three years at Pixelgrade</h2>
+                    <p class="description mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                        amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum
+                        lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+                        Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                    <a href="#" class="btn btn-success px-4 py-2">
+                        Learn More
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 6 -->
+
+
+    <!-- <section class="six">
+        <div class="container">
+            <div class="row col-6 col-md-4 col-lg-6">
+                <h2 class="newTitle mt-5">
+                    Helping a local
+                </h2>
+                <h2 class="continue text-success">business reinvent itself</h2>
+                <p class="newDescription">We reached here with our hard work and dedication</p>
+            </div>
+
+            <div class="number1 d-grid">
+                <img src="AssetsBootstrap/miniIcon1.svg" width="48" height="48">
+                <div>2,245,341</div>
+                <div>members</div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+ -->
+
+
+    <!-- 6.2 -->
+
+
+
+
+
+    <section class="achievement">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Левая часть -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+
+                    <h1 class="title">
+                        Helping a local<br>
+                        <span>business reinvent itself</span>
+                        <!--<span> нужен для того, чтобы выделить часть текста внутри другого элемента и отдельно управлять ею.-->
+                    </h1>
+
+                    <p class="subtitle">
+                        We reached here with our hard work and dedication
+                    </p>
+
+                </div>
+
+
+                <!-- Правая часть -->
+                <div class="col-lg-6"> <!--50% занимает левая колонка и 50 правая когда размер больше 992px-->
+
+                    <div class="row g-5">
+                        <!--g-5 это расстояние между колонками карточек, тоесть g-5 работает снаружи карточек, a gap-5 это расстояние внутри flex-контейнера-->
+
+                        <!--row создает контейнер из 4 блоков-->
+                        <div class="col-md-6"> <!--col-md-6 ставит по две колонки в ряд от 768px-->
+
+                            <div class="stat-item d-flex align-items-center gap-3">
+                                <!--gap-3 это расстояние между иконкой и текстом внутри карточки-->
+
+
+                                <img src="AssetsBootstrap/miniIcon1.svg" width="48" height="48" class="me-3">
+
+                                <div>
+
+                                    <div class="number">2,245,341</div>
+                                    <div class="label">Members</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6">
+
+                            <div class="stat-item d-flex align-items-center">
+
+                                <img src="AssetsBootstrap/Icon3.svg" width="48" height="48" class="me-3">
+                                <div>
+                                    <div class="number">46,328</div>
+                                    <div class="label">Clubs</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6">
+
+                            <div class="stat-item d-flex align-items-center">
+
+                                <img src="AssetsBootstrap/miniIcon2.svg" width="48" height="48" class="me-3">
+
+                                <div>
+                                    <div class="number">828,867</div>
+                                    <div class="label">Event Bookings</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6">
+
+                            <div class="stat-item d-flex align-items-center">
+
+                                <img src="AssetsBootstrap/miniIcon4.svg" width="48" height="48" class="me-3">
+                                <div>
+                                    <div class="number">1,926,436</div>
+                                    <div class="label">Payments</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6.3 -->
+
+
+    <!-- <section class="newAchievements">
+        <div class="container">
+            <div class="row align-items-center"> -->
+
+    <!-- left -->
+
+    <!-- <div class="col-lg-6 mb-5 mb-lg-0">
+
+                    <h1 class="title2">
+                        Helping a local<br>
+                        <span>business reinvent itself</span>
+                    </h1>
+                    <p class="subtitle">We reached here with our hard work and dedication</p>
+                </div>  -->
+
+
+    <!-- right -->
+
+    <!-- 
+                <div class="col-lg-6">
+                    <div class="row g-5">
+                        <div class="col-md-6">
+                            <div class="stat-item2 d-flex align-items-center">
+
+
+                                <img src="AssetsBootstrap/miniIcon1.svg" width="48" height="48" class="me-3">
+
+
+                                <div>
+                                    <div class="number2">2,245,341</div>
+                                    <div class="person">Members</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-6">
+
+                            <div class="stat-item2 d-flex align-items-center">
+                                <img src="AssetsBootstrap/miniIcon3.svg" width="48" height="48" class="me-3">
+
+                                <div>
+                                    <div class="number2">46,328</div>
+                                    <div class="person">Clubs</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <div class="stat-item2 d-flex align-items-center">
+                                <img src="AssetsBootstrap/miniIcon2.svg" width="48" height="48" class="me-3">
+
+                                <div>
+                                    <div class="number2">828,867</div>
+                                    <div class="person">Event Bookings</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-6">
+                            <div class="stat-item2 d-flex align-items-center">
+                                <img src="AssetsBootstrap/miniIcon4.svg" width="48" height="48" class="me-3">
+
+
+                                <div>
+                                    <div class="number2">1,926,436</div>
+                                    <div class="person">Payments</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+
+
+
+    <!-- 7 -->
+
+
+    <section class="design py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+
+                    <img src="AssetsBootstrap/Pana/mobile-login/pana.svg" width="441" height="433" class="img-fluid"
+                        alt="Mobile Login Registration">
+
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 text-start">
+                    <div class="newBlock">
+                        <h1 class="title3">How to design your site footer like we did </h1>
+                        <p class="newSubtitle">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
+                            nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis
+                            erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui,
+                            at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna
+                            tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis
+                            est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+                            gravida.</p>
+                        <button class="btn btn-success px-4 py-3 mt-3">Learn More</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 8 -->
+
+
+
+
+    <section class="blackPic">
+        <div class="container">
+            <div class="row align-items-center gx-0">
+
+                <div class="col-lg-5 px-0">
+
+                    <img src="AssetsBootstrap/blackPic.svg" class="img-fluid">
+
+                </div>
+
+
+                <div class="col-lg-7 px-0">
+
+                    <p class="anotherDescription mt-2 text-secondary">
+                        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                        tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                        gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie,
+                        nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla
+                        sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque
+                        malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget
+                        efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                    </p>
+
+                    <div class="name">Tim Smith</div>
+
+                    <p class="Dragon mt-1">British Dragon Boat Racing Association</p>
+
+                    <div class="d-flex align-items-center gap-4 flex-wrap mt-4">
+                        <!--Почему тут сильно увеличиваются иконки если я ставлю только row? Потому-что когда нет col снизу bootstrap видит img как колонки -->
+
+
+
+
+
+                        <img src="AssetsBootstrap/miniPic1.svg" width="48" height="48" class="img-fluid">
+
+                        <img src="AssetsBootstrap/miniPic2.svg" width="48" height="48" class="img-fluid">
+
+                        <img src="AssetsBootstrap/miniPic3.svg" width="48" height="48" class="img-fluid">
+
+                        <img src="AssetsBootstrap/miniPic4.svg" width="48" height="48" class="img-fluid">
+
+                        <img src="AssetsBootstrap/miniPic5.svg" width="48" height="48" class="img-fluid">
+
+                        <img src="AssetsBootstrap/miniPic6.svg" width="48" height="48" class="img-fluid">
+
+
+
+                        <div class="col-auto">
+                            <div class="customer">
+                                Meet all customers ->
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <style>
+                    .anotherDescription {
+                        max-width: 600px;
+                        width: 100%;
+                    }
+                </style>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 8.2 -->
+
+
+    <!-- <section class="customers py-5">
+        <div class="container">
+
+            <div class="row align-items-center"> -->
+
+    <!-- Левая часть с изображением -->
+    <!-- <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+
+                    <img src="AssetsBootstrap/blackPic.svg" class="img-fluid rounded-3" alt="Tesla">
+
+                </div> -->
+
+
+    <!-- Правая часть -->
+    <!-- <div class="right col-lg-8">
+
+                    <p class="customer-text">
+                        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                        tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                        gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie,
+                        nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla
+                        sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque
+                        malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget
+                        efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                    </p>
+
+
+                    <h5 class="text-success fw-bold mb-2">
+                        Tim Smith
+                    </h5>
+
+
+                    <p class="text-secondary">
+                        British Dragon Boat Racing Association
+                    </p> -->
+
+
+    <!-- Логотипы -->
+    <!-- <div class="d-flex align-items-center gap-4 flex-wrap mt-4">
+
+
+
+
+                        <img src="AssetsBootstrap/miniPic1.svg" width="48">
+
+                        <img src="AssetsBootstrap/miniPic2.svg" width="48">
+
+                        <img src="AssetsBootstrap/miniPic3.svg" width="48">
+
+                        <img src="AssetsBootstrap/miniPic4.svg" width="48">
+
+                        <img src="AssetsBootstrap/miniPic5.svg" width="48">
+
+                        <img src="AssetsBootstrap/miniPic6.svg" width="48">
+
+
+
+ 
+                        <div class="text-success fw-bold text-decoration-none ms-lg-3">
+
+                            Meet all customers
+                            <span>→</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+    <!-- 9 -->
+
+
+
+    <section class="caring">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="text-center">
+
+
+                    <h1 class="heading mt-5">Caring is the new marketing</h1>
+
+                    <div class="col-lg-8 mx-auto">
+                        <!--col-lg-8 значит что на больших экранах этот блок будет занимать 8 из 12 колонок(66% от ширины контейнера), а mx-auto это автоматические отступы(margins) слева и справа-->
+
+                        <p class="blog text-secondary">The Nexcent blog is the best place to read about the latest
+                            membership insights,
+                            trends and more. See who's joining the community, read about how our community are
+                            increasing
+                            their membership income and lot's more.​</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="d-flex align-items-center gap-3">
+
+
+                    <img src="AssetsBootstrap/cart1.png" width="368" height="366" class="img-fluid">
+                    <img src="AssetsBootstrap/cart2.svg" width="368" height="366" class="img-fluid">
+                    <img src="AssetsBootstrap/cart3.png" width="368" height="366" class="img-fluid">
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 10 -->
+
+
+    <section class="Demo pb-5">
+        <div class="container">
+            <div class="row text-center">
+
+
+                <div class="col-lg-8 mx-auto mt-5">
+
+                    <h1 class="foreign display-2">Pellentesque suscipit <br> fringilla libero eu.</h1>
+                    <!--display-2 = font-size: 4m (64px)-->
+
+                </div>
+
+                <!-- <style>
+                    .foreign {              /*Почему не уменьшается текст когда я сужаю экран? Потому-что 64px это фиксированный размер, bootstrap не будет его менять, поэтому нужно это делать либо с display-2 или с media в css*/
+                        /* font-size: 64px; */
+                        color: #4D4D4D;
+                        font-weight: 600;
+                    }
+                </style> -->
+
+
+                <div class="col-12 mt-3 mb-5"> <!--Просто col-12 означает занимай на всех размерах экрана 100%-->
+
+                    <a href="#" class="btn btn-success d-inline-flex align-items-center justify-content-center gap-2"> <!--d-flex — большая коробка, которая растягивается.
+d-inline-flex — маленькая коробка размером с содержимое.
+
+Для кнопок почти всегда нужен второй вариант.-->
+                        <span class="text-nowrap">Get a Demo</span>
+                        <img src="AssetsBootstrap/Right.svg" width="16" height="16">
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 10.2 -->
+
+    <!-- 
+    <section class="demo-section py-5">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-12">
+
+                    <h1 class="bigTitle display-2 fw-semi-bold mb-4">
+                        Pellentesque suscipit <br>
+                        fringilla libero eu.
+                    </h1>
+
+                    <a href="#" class="btn btn-success px-4 py-3">
+                        <span class="demo">Get a Demo</span>
+                        <img src="AssetsBootstrap/Right.svg" width="16" height="16">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+ -->
+
+
+
+    <!-- 11 -->
+
+
+
+    <section class="footer mb-5 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+
+
+                <!-- Левая часть -->
+
+                <div class="col-12 col-md-5 col-lg-5">
+                    <!--Зачем тут добавлять col-12? Чтобы указать поведение для самых маленьких экранов(меньше 576px)-->
+
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <img src="AssetsBootstrap/Nexcent.svg" class="img-fluid" width="43" height="29">
+                        <div class="nex fs-3">Nexcent</div>
+
+
+                    </div>
+
+
+
+                    <div class="icons text-start">
+
+                        <div class="copyright text-light mt-3">Copyright © 2020 Nexcent ltd.</div>
+                        <div class="reserved text-light mt-2 mb-4">All rights reserved</div>
+
+
+
+                        <div class="d-flex gap-3">
+
+                            <a href="#" class="social">
+                                <img src="AssetsBootstrap/Insta.svg" class="img-fluid mt-3" width="32" height="32">
+                            </a>
+
+                            <a href="#" class="social">
+                                <img src="AssetsBootstrap/Internet.svg" class="img-fluid mt-3" width="32" height="32">
+                            </a>
+
+                            <a href="#" class="social">
+                                <img src="AssetsBootstrap/Twitter.svg" class="img-fluid mt-3" width="32" height="32">
+                            </a>
+
+                            <a href="#" class="social">
+                                <img src="AssetsBootstrap/YouTube.svg" class="img-fluid mt-3" width="32" height="32">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--Правая часть-->
+
+                <div class="col-12 col-md-2 col-lg-2 ">
+
+                    <ul class="blocks text-white list-unstyled">
+                        <li class="Title">Company</li>
+                        <li class="link">About us</li>
+                        <li class="link">Blog</li>
+                        <li class="link">Contact us</li>
+                        <li class="link">Pricing</li>
+                        <li class="link">Testimonials</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-2 col-lg-2">
+
+
+                    <ul class="blocks text-white list-unstyled">
+                        <li class="Title">Support</li>
+                        <li class="link">Help center</li>
+                        <li class="link">Terms of service</li>
+                        <li class="link">Legal</li>
+                        <li class="link">Privacy policy</li>
+                        <li class="link">Status</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-2">
+                    <div class="date text-white mb-3">Stay up to date</div>
+
+                    <!-- <button class="btn btn-secondary footer-btn text-start ">Your email address
+                        <img src="AssetsBootstrap/Email.svg" width="18" height="18">
+
+                    </button> -->
+
+                    <div class="lastClass">
+
+                        <input type="email" class="form-control footer-btn" placeholder="Your email address">
+
+                        <img src="AssetsBootstrap/Email.svg" class="email-icon" width="18" height="18">
+
+
+                    </div>
+
+
+
+                </div>
+
+              
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
