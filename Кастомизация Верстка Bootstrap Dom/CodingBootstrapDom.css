@@ -7,9 +7,23 @@
      color: #4CAF4F;
  }
 
- .btn-success {
-     border-radius: 6px;
+ /* .btn-success {
+     border-radius: 6px; 
      padding: 10px 24px;
+ } */
+
+
+ .btn {
+    /* background-color: green; */
+    /* color: #FFFFFF; */
+    /* width: 140px;
+    height: 40px; */
+    background-color: #4CAF4F;
+    color: #FFFFFF;
+    font-size: 16px;
+   
+   
+    
  }
 
 
@@ -37,17 +51,17 @@
 
 
  @media (max-width: 768px) {
-    .hero-title {
-        font-size: 48px;
-    }
-}
+     .hero-title {
+         font-size: 48px;
+     }
+ }
 
 
-@media (max-width: 576px) {
-    .hero-title {
-        font-size: 32px;
-    }
-}
+ @media (max-width: 576px) {
+     .hero-title {
+         font-size: 32px;
+     }
+ }
 
 
 
@@ -56,16 +70,27 @@
  }
 
  .hero-text {
-     margin: 25px 0;
+     margin: 30px 0;
      color: #717171;
      font-size: 16px;
+
  }
+
+
+/* .btn2 {
+    width: 128px;
+    
+} */
+
 
  .btn-success {
      background: #4CAF4F;
      border: none;
      border-radius: 6px;
      padding: 14px 36px;
+     text-decoration: none;
+     color: #FFFFFF;
+
  }
 
  .btn-success:hover {
@@ -112,9 +137,9 @@
 
 
  @media (max-width: 576px) {
-    .clients h2 {
-        font-size: 32px;
-    }
+     .clients h2 {
+         font-size: 32px;
+     }
  }
 
  .clients p {
@@ -188,7 +213,7 @@
      color: #717171;
      font-size: 14px;
      font-weight: 400;
-     /* margin-bottom: 30px; */
+     margin-bottom: 30px;
  }
 
 
@@ -347,10 +372,13 @@
  }
 
 
- .btn {
-     width: 161px;
- }
-
+  .btn3 {
+     /* width: 100px; */
+     text-decoration: none;
+     color: #FFFFFF;
+     margin-top: 100px;
+     /* padding: 14px 32px; */
+ } 
 
  .newSubtitle {
      max-width: 600px;
@@ -494,6 +522,8 @@ h5 {
 
 
 
+ 
+
 
  /* 10.2 */
 
@@ -520,6 +550,7 @@ h5 {
      font-size: 20px;
      margin-bottom: 10px;
      color: #FFFFFF;
+     font-weight: 600;
 
  }
 
@@ -528,6 +559,7 @@ h5 {
      font-size: 14px;
      margin-bottom: 10px;
      color: #F5F7FA;
+     font-weight: 400;
  }
 
 
@@ -623,10 +655,6 @@ h5 {
 
 
 
-
-
-
-
  /* li span {
     font-size: 20px;
     padding-bottom: 10px;
@@ -636,3 +664,56 @@ h5 {
  li {
     font-size: 14px;
  } */
+
+
+
+
+
+ /* 11.2 */
+
+
+ .footer2 {
+     background-color: #263238;
+     padding: 50px 0;
+ }
+
+
+ .newcopy {
+     color: #F5F7FA;
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+
+ .rights {
+     color: #F5F7FA;
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+
+ .newBlocks .newTitle {
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #FFFFFF;
+     font-weight: 600;
+
+ }
+
+
+ .newBlocks .link2 {
+     font-size: 14px;
+     color: #F5F7FA;
+     margin-bottom: 12px;
+     font-weight: 400;
+
+ }
+
+
+ .last {
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+
+ 
